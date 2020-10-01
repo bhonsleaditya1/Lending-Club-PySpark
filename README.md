@@ -1,8 +1,5 @@
 # **Performance of Multi-Class Classification vs Individual Binary Classification Models** #
 
-## **Data From:** ##
-Lending Club from Kaggle
-
 ## **Objective:** ##
 Exploring into the Lending Club loan data to figure out which algorithm would best suite a multi-class problem to identify defaulters and how much of the principal amount would they repay.
 
@@ -16,18 +13,17 @@ Exploring into the Lending Club loan data to figure out which algorithm would be
 
 - The data used for the project is limited to the lending Club dataset in Kaggle ([https://www.kaggle.com/wendykan/lending-club-loan-data](https://www.kaggle.com/wendykan/lending-club-loan-data))
 
-## **Data used for the Project** ##
+## **About Data** ##
 
--LendingClub data from kaggle
-
-  - Contains complete loan data for all loans issued through the 2007-2018
-    - 2.2 million observations and 133 variables
-  - Active loans removed from data
-    - 1.3 million observations and 133 variables
-  - Variable types:
-    - Profiling: Address, Employment Length, Zip Code
-    - Bureau: Utilization, Inquiry in past 12 months, Satisfactory Accounts
-    - Loan: Interest Rate, Funded Amount
+LendingClub data from kaggle
+- Contains complete loan data for all loans issued through the 2007-2018
+  - 2.2 million observations and 133 variables
+- Active loans removed from data
+  - 1.3 million observations and 133 variables
+- Variable types:
+  - Profiling: Address, Employment Length, Zip Code
+  - Bureau: Utilization, Inquiry in past 12 months, Satisfactory Accounts
+  - Loan: Interest Rate, Funded Amount
 
 **Running on** : COLAB Notebooks
 
@@ -39,7 +35,7 @@ Exploring into the Lending Club loan data to figure out which algorithm would be
 - Matplotlib
 - Seaborn
 
-Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
+Cleaning & ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 
 # **Methodology Used:** #
 
@@ -71,8 +67,8 @@ Creating some dependent variables to facilitate class creation.
 | **Target** | **Loan Status** | **Amount Repaid** |
 | --- | --- | --- |
 | 0 | No Default | 100% |
-| 1 | Default | \&lt;25% |
-| 2 | Default | \&gt;25% |
+| 1 | Default | 25% |
+| 2 | Default | 25% |
 
 ## **Variable Selection** : ##
 
