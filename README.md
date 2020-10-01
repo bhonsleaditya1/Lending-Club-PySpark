@@ -1,22 +1,22 @@
-# **Performance of Multi-Class Classification vs Individual Binary Classification Models**#
+# **Performance of Multi-Class Classification vs Individual Binary Classification Models** #
 
-##**Data From:**## 
+## **Data From:** ##
 Lending Club from Kaggle
 
-##**Objective:**##
+## **Objective:** ##
 Exploring into the Lending Club loan data to figure out which algorithm would best suite a multi-class problem to identify defaulters and how much of the principal amount would they repay.
 
-##**Methodology:**##
+## **Methodology:** ##
 
 - All the variables would be categorized and used based on their importance derived
 - Three different classes would be used for the multiclass problem
 - Different modelling approach would be looked at to come up with the best fit for a multi-class approach
 
-##**Scope:**##
+## **Scope:** ##
 
 - The data used for the project is limited to the lending Club dataset in Kaggle ([https://www.kaggle.com/wendykan/lending-club-loan-data](https://www.kaggle.com/wendykan/lending-club-loan-data))
 
-##**Data used for the Project**##
+## **Data used for the Project** ##
 
 -LendingClub data from kaggle
 
@@ -31,7 +31,7 @@ Exploring into the Lending Club loan data to figure out which algorithm would be
 
 **Running on** : COLAB Notebooks
 
-##**Libraries &amp; Frameworks:**##
+## **Libraries &amp; Frameworks:** ##
 - NumPy
 - PySpark
 - SkLearn
@@ -41,15 +41,15 @@ Exploring into the Lending Club loan data to figure out which algorithm would be
 
 Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 
-#**Methodology Used:**#
+# **Methodology Used:** #
 
-##**Data Exploration**##
+## **Data Exploration** ##
 
 - Basic Statistics for All Variables: Min, Max, Percentiles at 25 50 75, stddev
 - Plotting variables for Categorical Variables: Analyzing class imbalance
 - Analyzing data distribution for Numerical Values: Measure Skewedness of distribution
 
-##**Data Pre-Processing**:##
+## **Data Pre-Processing**: ##
 
 - Fill Rate:
 
@@ -61,11 +61,11 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
   - z-score:
   - DBSCAN (Density Based Spatial Clustering with Application of Noise):
 
-##**Variable Creation**:## Creating some dependent variables to facilitate class creation.
+## **Variable Creation** : ## Creating some dependent variables to facilitate class creation.
 
 ![](/images/Capture.png)
 
-##**Target** :##
+## **Target** : ##
 
 | **Target** | **Loan Status** | **Amount Repaid** |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 | 1 | Default | \&lt;25% |
 | 2 | Default | \&gt;25% |
 
-##**Variable Selection:**##
+## **Variable Selection:** ##
 
 - Gini:
 - Information Value (IV):
@@ -81,7 +81,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
   - Low IV variables kept seeing business importance
 - Pair-wise Correlation: Of highly correlated variables one with higher IV kept
 
-##**Data Selection with Event Rates:**##
+## **Data Selection with Event Rates:** ##
 
 | **Splits** | Event Rates |
 | --- | --- |
@@ -90,13 +90,13 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 | Development | 10.4% | 10.6% |
 | Out of Sample | 10.3% | 10.6% |
 
-##**Ranking Plots:**##
+## **Ranking Plots:** ##
 
 ![](/images/Picture1.png)
 
-#**Algorithms:**#
+# **Algorithms:** #
 
- ##**XGBoost**##
+ ## **XGBoost** ##
 
 - XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.
   - combines the predictive power of multiple learners.
@@ -104,20 +104,20 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 - Handling Sparse Data
 - Parallel Processing
 
-###**Variants**:###
+### **Variants** : ###
 
 - Simple XGBoost
 - RFECV + XGBoost:
   - RFECV
 
-###**Optimizers:**###
+### **Optimizers:** ###
 
 - GridSearchCV:
 - RandomSearchCV:
 - Bayesian-Optimization:
 - Hyperopt:
 
-###**Hyperparameters used:**###
+### **Hyperparameters used: ** ###
 
 - n\_estimators:
 - max\_depth
@@ -126,9 +126,9 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 - scale\_pos\_weight
 - num\_round
 
-###**Neural Networks**###
+### **Neural Networks ** ###
 
-###**Optimizers:**
+### **Optimizers:**
 
 - **Keras:**
   - SGD:
@@ -140,7 +140,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 
 - Bayesian Optimization: Global Optimization
 
-##**Key Recommendations**##
+## **Key Recommendations** ##
 
 - Improvement in performance by applying DBSCAN.
 - Bayesian Optimization has better performance than hyperopt, GridSearchCV, RandomSearchCV.
@@ -152,7 +152,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 - Neural Nets is black box.
   - Inside working is unknown.
   
-##**Variable Importance**##
+## **Variable Importance** ##
 
 ![XGBoost](/images/Picture2.png)
 ![Neural Networks](/images/Picture3.png)
