@@ -30,29 +30,12 @@ LendingClub data from kaggle
 **Running on** : COLAB Notebooks
 
 **Libraries &amp; Frameworks** :
-
-|
 - NumPy
- |
 - PySpark
- |
 - SkLearn
- |
-| --- | --- | --- |
-|
 - Pandas
- |
 - Matplotlib
- |
 - Seaborn
- |
-
-| **Splits** | Event Rates |
-| --- | --- |
-| Class 1 | Class 2 |
-| Out of Time | 12.2% | 14.2% |
-| Development | 10.4% | 10.6% |
-| Out of Sample | 10.3% | 10.6% |
 
 Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 
@@ -73,15 +56,12 @@ Data Exploration
 - OneHotEncoding for Categorical Variables
 
 - Outlier Removal:
-
- ![](RackMultipart20201001-4-e3zz99_html_647684055b62edd.gif)
-
   - z-score:
   - DBSCAN (Density Based Spatial Clustering with Application of Noise):
 
 **Variable Creation**** :** Creating some dependent variables to facilitate class creation.
 
--
+![](/images/Capture.png)
 
 | **Target** | **Loan Status** | **Amount Repaid** |
 | --- | --- | --- |
@@ -102,15 +82,16 @@ Data Exploration
 
 **Data Selection with Event Rates**** :**
 
-**R ![](RackMultipart20201001-4-e3zz99_html_9ddca510634401fb.png) anking Plots:**
+| **Splits** | Event Rates |
+| --- | --- |
+| Class 1 | Class 2 |
+| Out of Time | 12.2% | 14.2% |
+| Development | 10.4% | 10.6% |
+| Out of Sample | 10.3% | 10.6% |
 
-![](RackMultipart20201001-4-e3zz99_html_4d11caeb45714f7b.png)
+**Ranking Plots:**
 
-![](RackMultipart20201001-4-e3zz99_html_f904121fad4670b.png) ![](RackMultipart20201001-4-e3zz99_html_23a53990b5106708.png)
-
-![](RackMultipart20201001-4-e3zz99_html_218868ee2c2a7a31.png) ![](RackMultipart20201001-4-e3zz99_html_9ec503564e1fbb1a.png)
-
-![](RackMultipart20201001-4-e3zz99_html_ce37c0ee051a964f.png) ![](RackMultipart20201001-4-e3zz99_html_2e54c71d8e332a05.png)
+![](/images/Picture1.png)
 
 **Algorithms:**
 
@@ -118,7 +99,7 @@ XGBoost
 
 - XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.
   - combines the predictive power of multiple learners.
-- R ![](RackMultipart20201001-4-e3zz99_html_953179c70f162273.png) egularization:
+- Regularization:
 - Handling Sparse Data
 - Parallel Processing
 
@@ -169,3 +150,7 @@ Key Recommendations
   - Feature Importance is readily available.
 - Neural Nets is black box.
   - Inside working is unknown.
+  
+Variable Importance
+![XGBoost](/images/Picture2.png)
+![Neural Networks](/images/Picture3.png)
