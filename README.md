@@ -61,7 +61,8 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
   - z-score:
   - DBSCAN (Density Based Spatial Clustering with Application of Noise):
 
-## **Variable Creation** : ## Creating some dependent variables to facilitate class creation.
+## **Variable Creation** : ## 
+Creating some dependent variables to facilitate class creation.
 
 ![](/images/Capture.png)
 
