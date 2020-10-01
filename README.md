@@ -95,7 +95,7 @@ Data Exploration
 
 **Algorithms:**
 
-XGBoost
+*XGBoost*
 
 - XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.
   - combines the predictive power of multiple learners.
@@ -125,7 +125,7 @@ Hyperparameters used:
 - scale\_pos\_weight
 - num\_round
 
-Neural Networks
+*Neural Networks*
 
 Optimizers:
 
@@ -139,7 +139,7 @@ Optimizers:
 
 - Bayesian Optimization: Global Optimization
 
-Key Recommendations
+**Key Recommendations**
 
 - Improvement in performance by applying DBSCAN.
 - Bayesian Optimization has better performance than hyperopt, GridSearchCV, RandomSearchCV.
@@ -151,6 +151,7 @@ Key Recommendations
 - Neural Nets is black box.
   - Inside working is unknown.
   
-Variable Importance
+**Variable Importance**
+
 ![XGBoost](/images/Picture2.png)
 ![Neural Networks](/images/Picture3.png)
