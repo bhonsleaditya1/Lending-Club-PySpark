@@ -49,7 +49,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 - Plotting variables for Categorical Variables: Analyzing class imbalance
 - Analyzing data distribution for Numerical Values: Measure Skewedness of distribution
 
-## **Data Pre-Processing**: ##
+## **Data Pre-Processing** : ##
 
 - Fill Rate:
 
@@ -73,7 +73,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 | 1 | Default | \&lt;25% |
 | 2 | Default | \&gt;25% |
 
-## **Variable Selection:** ##
+## **Variable Selection** : ##
 
 - Gini:
 - Information Value (IV):
@@ -81,7 +81,7 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
   - Low IV variables kept seeing business importance
 - Pair-wise Correlation: Of highly correlated variables one with higher IV kept
 
-## **Data Selection with Event Rates:** ##
+## **Data Selection with Event Rates** : ##
 
 | **Splits** | Event Rates |
 | --- | --- |
@@ -90,11 +90,11 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 | Development | 10.4% | 10.6% |
 | Out of Sample | 10.3% | 10.6% |
 
-## **Ranking Plots:** ##
+## **Ranking Plots** : ##
 
 ![](/images/Picture1.png)
 
-# **Algorithms:** #
+# **Algorithms** : #
 
  ## **XGBoost** ##
 
@@ -110,14 +110,14 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 - RFECV + XGBoost:
   - RFECV
 
-### **Optimizers:** ###
+### **Optimizers** : ###
 
 - GridSearchCV:
 - RandomSearchCV:
 - Bayesian-Optimization:
 - Hyperopt:
 
-### **Hyperparameters used: ** ###
+### **Hyperparameters used:** ###
 
 - n\_estimators:
 - max\_depth
@@ -126,9 +126,9 @@ Cleaning &amp; ETL (Extract, Transform and Load Data): NumPy, Pandas, PySpark.
 - scale\_pos\_weight
 - num\_round
 
-### **Neural Networks ** ###
+### **Neural Networks** ###
 
-### **Optimizers:**
+### **Optimizers:** ###
 
 - **Keras:**
   - SGD:
